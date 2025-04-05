@@ -9,7 +9,7 @@ function About() {
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-7 mt-10 md:mt-20'>
                 <div>
                     <div className='text-2xl md:text-4xl poppins-medium'><span className='text-blue-500 poppins-semibold'>Baliram Laundry</span> is the very first Laundry in Law gate establish by <span className='text-blue-500 poppins-semibold'>Mr. Baliram Kumar Gupta</span></div>
-                    <div className='mt-3 poppins-regular text-stone-800 text-sm md:text-[16px]'>We take year of your cloths from pikup till it's Delivery and take care that all of your items are delivered and cleaned with care.</div>
+                    <div className='mt-3 poppins-regular text-stone-800 text-sm md:text-[16px]'>We take care of your cloths from pikup till it's Delivery and take care that all of your items are delivered and cleaned up with care.</div>
                     <div className='mt-7 md:mt-16 flex flex-col gap-5 md:gap-8'>
                         <div className='flex gap-5'>
                             <FaBookmark size={25} />
