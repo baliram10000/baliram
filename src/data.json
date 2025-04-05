@@ -1,0 +1,214 @@
+{
+    "Normal-cloths": [
+        {
+            "title": "Jeans",
+            "image": "https://lscoecomm.scene7.com/is/image/lscoecomm/SEO---BLOG-IDEA-4---The-Definitive-Guide-to-Denim-REVAMP_16-9_Intro?fmt=jpeg&qlt=70&resMode=sharp2&fit=crop,1&op_usm=0.6,0.6,8&wid=2000&hei=1125",
+            "price": 25,
+            "description": "This is a shirt",
+            "isIron": true,
+            "category": "Normal-cloths"
+        },
+        {
+            "title": "Pant",
+            "image": "https://cdn.shopify.com/s/files/1/0423/3576/4634/files/wash-01_1024x1024.jpg?v=1620630030",
+            "price": 25,
+            "description": "This is a pant",
+            "isIron": true,
+            "category": "Normal-cloths"
+        },
+        {
+            "title": "Shirt",
+            "image": "https://www.brooksbrothers.eu/on/demandware.static/-/Sites-brooksbrothers-Library/default/dwcc745e91/landing/BBblog_2_linen_care.jpg",
+            "price": 25,
+            "description": "This is a shoe",
+            "isIron": true,
+            "category": "Normal-cloths"
+        },
+        {
+            "title": "Tshirt",
+            "image": "https://yourdesignstore.s3.amazonaws.com/uploads/yds/productImages/full/17119587213301Main-Product-Image.jpg",
+            "price": 25,
+            "description": "This is a hat",
+            "isIron": false,
+            "category": "Normal-cloths"
+        },
+        {
+            "title": "Undergarments",
+            "image": "https://cdn.shopify.com/s/files/1/0042/5689/0989/files/CTA2LARGE.png?v=1675370838",
+            "price": 25,
+            "description": "These are undergarments",
+            "isIron": false,
+            "category": "Normal-cloths"
+        },
+        {
+            "title": "Towel",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5EhowusdwbArc4h5EsRUOIwg7KsWSFaoVmA&s",
+            "price": 25,
+            "description": "This is a towel",
+            "isIron": false,
+            "category": "Normal-cloths"
+        },
+        {
+            "title": "Pajama",
+            "image": "https://cdn.shopify.com/s/files/1/0669/1684/3771/files/How-Often-Should-You-Wash-Your-Pajamas.jpg",
+            "price": 25,
+            "description": "This is a pajama",
+            "isIron": false,
+            "category": "Normal-cloths"
+        },
+        {
+            "title": "Shorts",
+            "image": "https://www.thehappyclothingcompany.com/cdn/shop/products/Mineral-Wash-Shorts_85ca99bb-19b2-4064-84c4-1c9a662817ac.jpg?v=1648583170",
+            "price": 25,
+            "description": "These are shorts",
+            "isIron": false,
+            "category": "Normal-cloths"
+        },
+        {
+            "title": "Kurta Pajama",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXhcSfnHJohpRofEipjnZOFza_clXZ_DaPrA&s",
+            "price": 25,
+            "description": "This is a kurta pajama",
+            "isIron": true,
+            "category": "Normal-cloths"
+        },
+        {
+            "title": "Bed Sheet",
+            "image": "https://cdn05.zipify.com/DsurkGhx204WGFMwXPUN5uWyLm0=/fit-in/3840x0/61a68b0b9f074b1e869935fc2fcb0e8c/bedsheets-5.png",
+            "price": 25,
+            "description": "This is a bed sheet",
+            "isIron": true,
+            "category": "Normal-cloths"
+        },
+        {
+            "title": "Pillow Cover",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKo-F-ry0OjUtXurfKsCYJLEIhvKtol5l2tw&s",
+            "price": 25,
+            "description": "This is a pillow cover",
+            "isIron": true,
+            "category": "Normal-cloths"
+        },
+        {
+            "title": "Socks",
+            "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRCyik2_A8qOp8ldpn8avIFKo4N10qx8R1w0S1JwsjC8Xs17xzKlEp4fLHOPbRbDZlIx27yUp92LLaSd0Qc5PF9H7TY3ArfJOoPrCJown_xlSlvUt0jfUCJ",
+            "price": 25,
+            "description": "This is a pillow cover",
+            "isIron": false,
+            "category": "Normal-cloths"
+        }
+    ],
+    "Dry-clean": [
+        {
+            "title": "Coat Pant",
+            "image": "https://content.jdmagicbox.com/comp/def_content/laundry_services/default-laundry-services-9-250.jpg",
+            "price": 250,
+            "description": "This is a coat pant",
+            "isIron": false,
+            "category": "Dry-clean"
+        },
+        {
+            "title": "Blazer",
+            "image": "https://gospinxpress.com/wp-content/uploads/2024/10/how-to-wash-suits-1024x689.webp",
+            "price": 140,
+            "description": "This is a blazer",
+            "isIron": false,
+            "category": "Dry-clean"
+        },
+        {
+            "title": "Jacket",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQre0NNzEYmkWZkQBWdMNMFlg_Tr5plwhreoA&s",
+            "price": 140,
+            "description": "This is a jacket",
+            "isIron": false,
+            "category": "Dry-clean"
+        }
+    ],
+    "Easy-wash": [
+        {
+            "title": "Hoodie",
+            "image": "https://images.unsplash.com/photo-1620799140188-3b2a02fd9a77?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "price": 25,
+            "description": "This is a hoodie",
+            "isIron": false,
+            "category": "Easy-wash"
+        },
+        {
+            "title": "Jacket",
+            "image": "https://media.istockphoto.com/id/2156609312/photo/street-style-fashion-cloth-of-beige-brown-mens-coat-classy-urban-outerwear.jpg?s=2048x2048&w=is&k=20&c=lq7GRbV9DMIDCl2efvAJX_8wGpVqUocDVVbWOpel6gE=",
+            "price": 35,
+            "description": "This is a jacket",
+            "isIron": false,
+            "category": "Easy-wash"
+        }
+    ],
+    "Blanket-wash": [
+        {
+            "title": "Single Bed",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmnjS5GXCHd-qVrZNQwPF3NmhJ0q5HM5dmA&s",
+            "price": 150,
+            "description": "This is a single bed blanket",
+            "isIron": true,
+            "category": "Blanket-wash"
+        },
+        {
+            "title": "Double Bed",
+            "image": "https://images.unsplash.com/photo-1559841771-599b6eeaca62?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "price": 200,
+            "description": "This is a double bed blanket",
+            "isIron": true,
+            "category": "Blanket-wash"
+        },
+        {
+            "title": "Single Bed(Rajai)",
+            "image": "https://m.media-amazon.com/images/I/71vFGaD-rNL.jpg",
+            "price": 250,
+            "description": "This is a single bed blanket",
+            "isIron": false,
+            "category": "Blanket-wash"
+        },
+        {
+            "title": "Double Bed(Rajai)",
+            "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR-c9_KuPz2TP56hIw--ENVVDe-Hzhjs-yG-Dwl1_t3BQ2hWNQEFmhNUC1Uw6KxvHjNVPP7Zh3UgIbthvlV2iKyFgEELkjmzXmuP1Bhell4ax_X6pcxtQS-ig",
+            "price": 450,
+            "description": "This is a double bed blanket",
+            "isIron": false,
+            "category": "Blanket-wash"
+        }
+    ],
+    "Bags": [
+        {
+            "title": "College Bag",
+            "image": "https://images.unsplash.com/photo-1490376840453-5f616fbebe5b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "price": 50,
+            "description": "This is a college bag",
+            "isIron": false,
+            "category": "Bags"
+        },
+        {
+            "title": "Trolley Bag",
+            "image": "https://plus.unsplash.com/premium_photo-1679046285198-e4d1d14410ec?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "price": 100,
+            "description": "This is a trolley bag",
+            "isIron": false,
+            "category": "Bags"
+        },
+        {
+            "title": "Medium Bag",
+            "image": "https://plus.unsplash.com/premium_photo-1671028547411-12a7fb233ddd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "price": 70,
+            "description": "This is a medium bag",
+            "isIron": false,
+            "category": "Bags"
+        }
+    ],
+    "Shoes": [
+        {
+            "title": "Shoe",
+            "image": "https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/w_403,c_limit/337f57b2-0272-4410-93c5-82c2c0f007a2/how-to-clean-your-shoes-in-6-easy-steps.jpg",
+            "price": 50,
+            "description": "This is a shoe",
+            "isIron": false,
+            "category": "Shoes"
+        }
+    ]
+}
