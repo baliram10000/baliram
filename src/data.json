@@ -29,7 +29,7 @@
             "image": "https://yourdesignstore.s3.amazonaws.com/uploads/yds/productImages/full/17119587213301Main-Product-Image.jpg",
             "price": 25,
             "description": "This is a hat",
-            "isIron": false,
+            "isIron": true,
             "category": "Normal-cloths"
         },
         {
@@ -77,7 +77,7 @@
             "image": "https://cdn05.zipify.com/DsurkGhx204WGFMwXPUN5uWyLm0=/fit-in/3840x0/61a68b0b9f074b1e869935fc2fcb0e8c/bedsheets-5.png",
             "price": 25,
             "description": "This is a bed sheet",
-            "isIron": true,
+            "isIron": false,
             "category": "Normal-cloths"
         },
         {
@@ -85,7 +85,7 @@
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKo-F-ry0OjUtXurfKsCYJLEIhvKtol5l2tw&s",
             "price": 25,
             "description": "This is a pillow cover",
-            "isIron": true,
+            "isIron": false,
             "category": "Normal-cloths"
         },
         {
