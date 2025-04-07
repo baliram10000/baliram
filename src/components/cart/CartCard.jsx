@@ -2,7 +2,6 @@ import React from 'react';
 import { TbIroning3Filled } from "react-icons/tb";
 
 function CartCard({ title, image, price, quantity, ironCloth, isIron, onIncrement, onDecrement, onToggleIron, category }) {
-    console.log("category: ", category);
     return (
         <div className='flex items-center gap-4 py-4 border-b border-stone-300'>
             {/* Product Image */}
@@ -13,7 +12,7 @@ function CartCard({ title, image, price, quantity, ironCloth, isIron, onIncremen
             {/* Product Details */}
             <div className='flex-1'>
                 <div className='text-lg font-semibold'>{title}</div>
-                <div className='text-sm text-stone-600'>Price: {price} {category=='Normal-cloths' ? 'Rs/Kg' : 'Rs/Piece'} </div>
+                <div className='text-sm text-stone-600'>Price: {price} {category === 'Normal-cloths' ? 'Rs/Kg' : 'Rs/Piece'}</div>
                 {ironCloth && <div className='text-sm text-blue-500'>Ironing Selected</div>}
                 {/* Ironing Option */}
                 {isIron && (
