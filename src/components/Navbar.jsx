@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { HiMiniShoppingCart } from "react-icons/hi2";
-import Cart from './cart/Cart';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 
-import logo from '../assets/logo.png';
+const Cart = React.lazy(() => import('./cart/Cart'));
+import logo from '../assets/logo.png'; // Directly import the logo as a static asset
 
 function Navbar() {
   const location = useLocation();
@@ -69,7 +71,7 @@ function Navbar() {
     if (address.fullAddress) message += `- Address Lane 2: ${address.fullAddress}\n`;
 
     // Redirect to WhatsApp
-    const whatsappUrl = `https://wa.me/9110199310?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/9060557296?text=${encodeURIComponent(message)}`;
     window.location.href = whatsappUrl;
   };
 
@@ -85,7 +87,7 @@ function Navbar() {
     <div className='relative'>
       <div className='flex justify-between items-center p-2 px-2 md:p-3 md:pl-5 rounded-full border border-blue-200 bg-blue-50'>
         <Link to={'/'} className='lilita-one-regular flex items-center gap-1 text-xl md:text-3xl'>
-          <img src={logo} alt="logo" className='w-9' />
+          <img src={logo} alt="logo" className='w-9' /> {/* Directly use the imported logo */}
           Baliram Laundry
         </Link>
         {location.pathname.startsWith('/order') && (
@@ -100,7 +102,9 @@ function Navbar() {
           <div className='fixed inset-0 bg-stone-600/70 px-10 backdrop-blur-lg bg-opacity-50 z-40' onClick={toggleCart}></div>
           <div className='fixed inset-0 flex px-2 items-center justify-center z-50'>
             <div className='bg-white border border-stone-300 shadow-lg rounded-lg p-4 w-full lg:w-[600px] h-[550px] overflow-auto flex flex-col justify-between'>
-              <Cart />
+              <Suspense fallback={<Skeleton count={5} />}>
+                <Cart />
+              </Suspense>
               <div className='mt-4'>
                 <h3 className='text-lg font-semibold mb-2'>Enter Address</h3>
                 <input
