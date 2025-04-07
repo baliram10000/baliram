@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { HiMiniShoppingCart } from "react-icons/hi2";
 import { Link, Outlet } from 'react-router-dom';
 
 import normal from '../assets/normal.png';
