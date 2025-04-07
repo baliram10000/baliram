@@ -18,9 +18,9 @@ function Home() {
       <div id="about">
         <About />
       </div>
-      <div id="pricing">
+      {/* <div id="pricing">
         <Pricing />
-      </div>
+      </div> */}
       <div id="faq">
         <FAQ />
       </div>
