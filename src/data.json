@@ -147,7 +147,7 @@
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmnjS5GXCHd-qVrZNQwPF3NmhJ0q5HM5dmA&s",
             "price": 150,
             "description": "This is a single bed blanket",
-            "isIron": true,
+            "isIron": false,
             "category": "Blanket-wash"
         },
         {
@@ -155,7 +155,7 @@
             "image": "https://images.unsplash.com/photo-1559841771-599b6eeaca62?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "price": 200,
             "description": "This is a double bed blanket",
-            "isIron": true,
+            "isIron": false,
             "category": "Blanket-wash"
         },
         {
