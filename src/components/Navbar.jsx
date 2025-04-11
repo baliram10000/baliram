@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { HiMiniShoppingCart } from "react-icons/hi2";
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
+import toast from 'react-hot-toast';
 
 const Cart = React.lazy(() => import('./cart/Cart'));
 import logo from '../assets/logo.png'; // Directly import the logo as a static asset
@@ -18,6 +19,11 @@ function Navbar() {
     landmark: '',
     fullAddress: ''
   });
+  const [fieldErrors, setFieldErrors] = useState({
+    pgName: false,
+    option: false,
+    fullAddress: false
+  });
   const [error, setError] = useState(''); // Error message state
   const cartItems = useSelector(state => state.order.items);
 
@@ -28,12 +34,30 @@ function Navbar() {
   const handleAddressChange = (e) => {
     const { name, value } = e.target;
     setAddress(prev => ({ ...prev, [name]: value }));
+    
+    // Clear error for this field when user starts typing
+    if (fieldErrors[name]) {
+      setFieldErrors(prev => ({ ...prev, [name]: false }));
+    }
+  };
+
+  const validateFields = () => {
+    const newFieldErrors = {
+      pgName: !address.pgName.trim(),
+      option: !address.option.trim(),
+      fullAddress: !address.fullAddress.trim()
+    };
+    
+    setFieldErrors(newFieldErrors);
+    
+    return !newFieldErrors.pgName && !newFieldErrors.option && !newFieldErrors.fullAddress;
   };
 
   const handleConfirmOrder = () => {
     // Validate required fields
-    if (!address.pgName || !address.option || !address.fullAddress) {
+    if (!validateFields()) {
       setError('Please fill in all required fields.');
+      toast.error('Please fill in all required fields.');
       return;
     }
 
@@ -121,13 +145,13 @@ function Navbar() {
                   placeholder='PG/Building Name (Required)'
                   value={address.pgName}
                   onChange={handleAddressChange}
-                  className='w-full px-4 py-2 mb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500'
+                  className={`w-full px-4 py-2 mb-2 border rounded-lg focus:outline-none focus:ring-2 ${fieldErrors.pgName ? 'border-red-500 ring-red-500' : 'border-gray-300 focus:ring-blue-500'}`}
                 />
                 <select
                   name='option'
                   value={address.option}
                   onChange={handleAddressChange}
-                  className='w-full px-4 py-2 mb-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500'
+                  className={`w-full px-4 py-2 mb-2 border rounded-lg focus:outline-none focus:ring-2 ${fieldErrors.option ? 'border-red-500 ring-red-500' : 'border-gray-300 focus:ring-blue-500'}`}
                 >
                   <option value=''>Select Location (Required)</option>
                   <option value='Law Gate'>Law Gate</option>
@@ -149,7 +173,7 @@ function Navbar() {
                   placeholder='Address Lane 2 (Required)'
                   value={address.fullAddress}
                   onChange={handleAddressChange}
-                  className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500'
+                  className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 ${fieldErrors.fullAddress ? 'border-red-500 ring-red-500' : 'border-gray-300 focus:ring-blue-500'}`}
                 ></textarea>
                 {error && <div className='text-red-500 text-sm mt-2'>{error}</div>}
               </div>
@@ -157,12 +181,7 @@ function Navbar() {
                 <div onClick={toggleCart} className='bg-red-400 shadow-lg poppins-medium shadow-stone-300 text-stone-50 px-4 lg:px-5 py-3 lg:py-4 rounded-lg hover:scale-110 transition-all duration-300 cursor-pointer'>Close</div>
                 <button
                   onClick={handleConfirmOrder}
-                  disabled={!address.pgName || !address.option || !address.fullAddress}
-                  className={`flex-1 flex justify-center items-center ${
-                    !address.pgName || !address.option || !address.fullAddress
-                      ? 'bg-gray-400 cursor-not-allowed'
-                      : 'bg-blue-500 hover:scale-110'
-                  } shadow-lg poppins-medium shadow-stone-300 text-stone-50 px-4 lg:px-5 py-3 lg:py-4 rounded-lg transition-all duration-300`}
+                  className='flex-1 flex justify-center items-center bg-blue-500 hover:scale-110 shadow-lg poppins-medium shadow-stone-300 text-stone-50 px-4 lg:px-5 py-3 lg:py-4 rounded-lg transition-all duration-300'
                 >
                   Confirm Your Order
                 </button>
