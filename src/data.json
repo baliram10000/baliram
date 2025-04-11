@@ -29,7 +29,7 @@
             "image": "https://yourdesignstore.s3.amazonaws.com/uploads/yds/productImages/full/17119587213301Main-Product-Image.jpg",
             "price": 25,
             "description": "This is a hat",
-            "isIron": true,
+            "isIron": false,
             "category": "Normal-cloths"
         },
         {
@@ -77,7 +77,7 @@
             "image": "https://cdn05.zipify.com/DsurkGhx204WGFMwXPUN5uWyLm0=/fit-in/3840x0/61a68b0b9f074b1e869935fc2fcb0e8c/bedsheets-5.png",
             "price": 25,
             "description": "This is a bed sheet",
-            "isIron": false,
+            "isIron": true,
             "category": "Normal-cloths"
         },
         {
@@ -85,7 +85,7 @@
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKo-F-ry0OjUtXurfKsCYJLEIhvKtol5l2tw&s",
             "price": 25,
             "description": "This is a pillow cover",
-            "isIron": false,
+            "isIron": true,
             "category": "Normal-cloths"
         },
         {
@@ -111,14 +111,6 @@
             "image": "https://gospinxpress.com/wp-content/uploads/2024/10/how-to-wash-suits-1024x689.webp",
             "price": 140,
             "description": "This is a blazer",
-            "isIron": false,
-            "category": "Dry-clean"
-        },
-        {
-            "title": "Jacket",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQre0NNzEYmkWZkQBWdMNMFlg_Tr5plwhreoA&s",
-            "price": 140,
-            "description": "This is a jacket",
             "isIron": false,
             "category": "Dry-clean"
         }
@@ -147,7 +139,7 @@
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrmnjS5GXCHd-qVrZNQwPF3NmhJ0q5HM5dmA&s",
             "price": 150,
             "description": "This is a single bed blanket",
-            "isIron": false,
+            "isIron": true,
             "category": "Blanket-wash"
         },
         {
@@ -155,7 +147,7 @@
             "image": "https://images.unsplash.com/photo-1559841771-599b6eeaca62?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "price": 200,
             "description": "This is a double bed blanket",
-            "isIron": false,
+            "isIron": true,
             "category": "Blanket-wash"
         },
         {
@@ -178,7 +170,7 @@
     "Bags": [
         {
             "title": "College Bag",
-            "image": "https://images.unsplash.com/photo-1490376840453-5f616fbebe5b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb_s1lXEZ1YOHSb3v27rRnd3fKm4BA7Fsddg&s",
             "price": 50,
             "description": "This is a college bag",
             "isIron": false,
@@ -186,7 +178,7 @@
         },
         {
             "title": "Trolley Bag",
-            "image": "https://plus.unsplash.com/premium_photo-1679046285198-e4d1d14410ec?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMwB2O0PXEJIzu_7VPHI3EYqdZodNe5IDPxw&s",
             "price": 100,
             "description": "This is a trolley bag",
             "isIron": false,
@@ -194,7 +186,7 @@
         },
         {
             "title": "Medium Bag",
-            "image": "https://plus.unsplash.com/premium_photo-1671028547411-12a7fb233ddd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYORKBP-NtTCcEQrJZvg9nWp83aI7aPjjOGw&s",
             "price": 70,
             "description": "This is a medium bag",
             "isIron": false,
