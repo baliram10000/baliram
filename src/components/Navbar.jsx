@@ -71,7 +71,7 @@ function Navbar() {
     if (address.fullAddress) message += `- Address Lane 2: ${address.fullAddress}\n`;
 
     // Redirect to WhatsApp
-    const whatsappUrl = `https://wa.me/9060557296?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/9110199310?text=${encodeURIComponent(message)}`;
     window.location.href = whatsappUrl;
   };
 
