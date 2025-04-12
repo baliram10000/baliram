@@ -41,6 +41,14 @@
             "category": "Normal-cloths"
         },
         {
+            "title": "Vest",
+            "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTO7erAvxPbziIX_2V_CKPr0HBABpCNiHa1BZN5bpkxSdWvttc42d1BSccqreMnXfyPjUSMyoejXbL5Pn4Y-azfcEIHbPUCbO1c5i0h5_nP9g1PdOIPzue9",
+            "price": 25,
+            "description": "These are Vest",
+            "isIron": false,
+            "category": "Normal-cloths"
+        },
+        {
             "title": "Towel",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5EhowusdwbArc4h5EsRUOIwg7KsWSFaoVmA&s",
             "price": 25,
