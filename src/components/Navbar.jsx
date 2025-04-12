@@ -17,12 +17,13 @@ function Navbar() {
     pgName: '',
     option: '',
     landmark: '',
-    fullAddress: ''
+    fullAddress: '',
+    phoneNumber: ''
   });
   const [fieldErrors, setFieldErrors] = useState({
     pgName: false,
     option: false,
-    fullAddress: false
+    phoneNumber: false
   });
   const [error, setError] = useState(''); // Error message state
   const cartItems = useSelector(state => state.order.items);
@@ -45,12 +46,12 @@ function Navbar() {
     const newFieldErrors = {
       pgName: !address.pgName.trim(),
       option: !address.option.trim(),
-      fullAddress: !address.fullAddress.trim()
+      phoneNumber: !address.phoneNumber.trim()
     };
     
     setFieldErrors(newFieldErrors);
     
-    return !newFieldErrors.pgName && !newFieldErrors.option && !newFieldErrors.fullAddress;
+    return !newFieldErrors.pgName && !newFieldErrors.option && !newFieldErrors.phoneNumber;
   };
 
   const handleConfirmOrder = () => {
@@ -93,6 +94,7 @@ function Navbar() {
     if (address.option) message += `- Location: ${address.option}\n`;
     if (address.landmark) message += `- Landmark: ${address.landmark}\n`;
     if (address.fullAddress) message += `- Address Lane 2: ${address.fullAddress}\n`;
+    message += `- Phone Number: ${address.phoneNumber}\n`;
 
     // Redirect to WhatsApp
     const whatsappUrl = `https://wa.me/9110199310?text=${encodeURIComponent(message)}`;
@@ -133,6 +135,14 @@ function Navbar() {
                 <h3 className='text-lg font-semibold mb-2'>Enter Address</h3>
                 <input
                   type='text'
+                  name='phoneNumber'
+                  placeholder='Phone Number (Required)'
+                  value={address.phoneNumber}
+                  onChange={handleAddressChange}
+                  className={`w-full px-4 py-2 mb-2 border rounded-lg focus:outline-none focus:ring-2 ${fieldErrors.phoneNumber ? 'border-red-500 ring-red-500' : 'border-gray-300 focus:ring-blue-500'}`}
+                />
+                <input
+                  type='text'
                   name='roomNo'
                   placeholder='Room No (Optional)'
                   value={address.roomNo}
@@ -170,10 +180,10 @@ function Navbar() {
                 />
                 <textarea
                   name='fullAddress'
-                  placeholder='Address Lane 2 (Required)'
+                  placeholder='Address Lane 2 (Optional)'
                   value={address.fullAddress}
                   onChange={handleAddressChange}
-                  className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 ${fieldErrors.fullAddress ? 'border-red-500 ring-red-500' : 'border-gray-300 focus:ring-blue-500'}`}
+                  className='w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500'
                 ></textarea>
                 {error && <div className='text-red-500 text-sm mt-2'>{error}</div>}
               </div>
