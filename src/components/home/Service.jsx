@@ -1,5 +1,8 @@
 import React from 'react';
 import { IoIosArrowForward } from "react-icons/io";
+import first from '../../assets/firstimage.jpeg';
+import second from '../../assets/secondimage.jpeg';
+import third from '../../assets/thirdimage.jpeg';
 
 function Service() {
     return (
@@ -25,14 +28,17 @@ function Service() {
                 </div>
             </div>
             <div className='mt-10 md:mt-16 grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-9'>
-                {[...Array(3)].map((_, index) => (
-                    <div key={index} className='w-full h-52 md:h-[330px] rounded-2xl md:rounded-[40px] flex flex-col justify-end overflow-hidden bg-cover bg-center' 
-                        style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)' }}>
-                        <div className='flex justify-between items-center py-2 px-3 md:pl-6 md:rounded-full bg-stone-800/55 backdrop-blur-3xl'>
-                            <span className='md:text-lg poppins-regular text-stone-50 py-4'>Laundry</span>
-                        </div>
-                    </div>
-                ))}
+                <div className='rounded-2xl md:rounded-3xl overflow-hidden shadow-lg shadow-blue-200'>
+                    <img src={first} alt="" className='w-full h-full object-cover' />
+                </div>
+
+                <div className='rounded-2xl md:rounded-3xl overflow-hidden shadow-lg shadow-blue-200'>
+                    <img src={second} alt="" className='w-full h-full object-cover' />
+                </div>
+
+                <div className='rounded-2xl md:rounded-3xl overflow-hidden shadow-lg shadow-blue-200'>
+                    <img src={third} alt="" className='w-full h-full object-cover' />
+                </div>
             </div>
         </div>
     );
